@@ -24,6 +24,9 @@ module.exports = {
       fontSize: {
         "13px": ["13px", { lineHeight: "1.45" }],
       },
+      animation: {
+        dotping: "dotping 1s linear infinite",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -73,8 +76,22 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        dotping: {
+          "0%": {
+            opacity: "1",
+            transform: "scale(0)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "scale(3.4)",
+          },
+          "50%": {
+            opacity: "scale(0.6)",
+          },
+        },
       },
       animation: {
+        dotping: "dotping 1s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

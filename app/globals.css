@@ -79,5 +79,18 @@
   }
 
   .my-class {
-    width: calc(100vw - 14rem);
+    width: calc(100vw - 14rem - 59px);
   }
+
+  .padding-l{
+    left: calc(100% - 4px)
+  }
+
+  .display-2line{
+    display: -webkit-box; 
+            -webkit-box-orient: vertical; 
+            -webkit-line-clamp: 2; 
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+  }
+
